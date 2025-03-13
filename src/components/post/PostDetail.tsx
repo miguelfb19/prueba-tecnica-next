@@ -28,7 +28,7 @@ interface Props {
   post: Post | null;
 }
 
-export const PostDetail = ({ post }: Props) => {
+const PostDetail = ({ post }: Props) => {
   const [liked, setLiked] = useState(false);
 
   if (!post) return <PostDetailSkeleton />;
@@ -106,3 +106,5 @@ export const PostDetail = ({ post }: Props) => {
     </div>
   );
 };
+
+export default PostDetail
