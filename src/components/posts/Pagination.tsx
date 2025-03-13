@@ -1,3 +1,4 @@
+import { Post } from "@/interfaces/post";
 import {
   Pagination,
   PaginationContent,
@@ -11,7 +12,7 @@ interface Props {
     currentPage: number;
     setCurrentPage: (pageNumber: number) => void;
     postsPerPage: number;
-    filteredPosts: any[];
+    filteredPosts: Post[];
     indexOfFirstPost: number;
     indexOfLastPost: number;
     totalPages: number;

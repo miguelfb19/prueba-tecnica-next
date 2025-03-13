@@ -1,6 +1,5 @@
 import { getUser } from "@/actions/get-user";
 import { Loading } from "@/components/ui/Loading";
-import { User } from "@/interfaces/user";
 import UserInfo from "../../../components/user/UserInfo";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft } from "lucide-react";

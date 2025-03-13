@@ -3,7 +3,7 @@ import { persist } from "zustand/middleware";
 
 export interface LocalComment {
   id: string;
-  postId:number;
+  postId: number;
   email: string;
   comment: string;
   date: Date;
@@ -13,8 +13,7 @@ interface LocalCommentsStore {
   localComments: LocalComment[];
   addComment: (newComment: LocalComment) => void;
   removeComment: (id: string) => void;
-}
-[];
+};
 
 export const useLocalCommentsStore = create<LocalCommentsStore>()(
   persist(

@@ -1,15 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "../ui/table";
 import { User } from "@/interfaces/user";
 import { Input } from "../ui/input";
 import { useState } from "react";

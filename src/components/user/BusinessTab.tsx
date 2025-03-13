@@ -30,7 +30,7 @@ export const BusinessTab = ({ user }: Props) => {
                 Company Motto
               </p>
               <p className="italic text-amber-700 dark:text-amber-400">
-                "{user.company.catchPhrase}"
+                {user.company.catchPhrase}
               </p>
             </div>
 

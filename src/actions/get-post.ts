@@ -1,5 +1,4 @@
 import { baseUrl } from "@/constants/APIurl";
-import { Post } from "@/interfaces/post";
 
 export const getPost = async (id: string) => {
   try {
