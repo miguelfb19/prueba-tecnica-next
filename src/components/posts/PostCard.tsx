@@ -7,7 +7,11 @@ import { Badge } from "../ui/badge";
 import Link from "next/link";
 import { gradients } from "@/constants/gradients";
 
-export const PostCard = ({ post }: { post: Post }) => {
+interface Props {
+  post: Post;
+}
+
+export const PostCard = ({ post }: Props) => {
   const [liked, setLiked] = useState(false);
 
   //   Take a random gradient to post base in residue of post id and gradients lenght division

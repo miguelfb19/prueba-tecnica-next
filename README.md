@@ -28,6 +28,16 @@ para que sea reconocible por el framework y el html.
 
 5. Tratamamos tambien de separar las interfaces y constantes globales como el API url para ser usadas a lo largo de toda la aplicacion y no tener que buscarlas archivo por archivo.
 
+6. En cuanto a la estructuración del proyecto, cree diferentes carpetad dentro del src/ para tener mas ordenado el proyecto y que sea más facil
+acceder a cada funcionalidad. En Next 14 la recomendacion es crear las pages en la carpeta app, donde cada carpeta es una ruta del proeyecto.
+
+7. La carpeta component contiene cada componente reutilizable y separado por cada seccion del proyecto: users, posts, user, post, etc...
+Para dar u mayor orden y legibilidad de la estructuración del proyecto. Las carpetas interfaces, constants y utils contienen codigo TS
+relacionado directamente con el nombre de la carpeta. La carpeta lib contiene informacion de shadcn, store contiene el store de zustand y 
+providers contiene el proveedor de tanstack query, si se necesitaran más proveedores de librerías irian allí.
+
+8. 
+
 
 
 # CUESTIONARIO TEÓRICO
