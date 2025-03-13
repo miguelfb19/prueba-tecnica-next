@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import TanstackProvider from "@/providers/TanstackProvider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,7 +16,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Prueba técnica",
-  description: "Esto es una prueba tecnica para desarrollador junior con nextjs",
+  description:
+    "Esto es una prueba tecnica para desarrollador junior con nextjs",
 };
 
 export default function RootLayout({
@@ -28,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <TanstackProvider>{children}</TanstackProvider>
       </body>
     </html>
   );
