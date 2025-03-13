@@ -1,6 +1,13 @@
+import dynamic from "next/dynamic";
+
 import { getPost } from "@/actions/get-post";
 import { Loading } from "@/components/ui/Loading";
-import { PostDetail } from "@/components/post/PostDetail";
+import { PostDetailSkeleton } from "@/components/post/PostDetailSkeleton";
+
+// PostDetail carga de manera diferida (lazy load)
+const PostDetail = dynamic(() => import("@/components/post/PostDetail"), {
+  loading: () => <PostDetailSkeleton />,
+});
 
 interface Props {
   params: Promise<{ id: string }>;

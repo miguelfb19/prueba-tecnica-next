@@ -15,7 +15,7 @@ export const CommentsSection = ({ postId }: Props) => {
     error,
     data: comments,
   } = useQuery({
-    queryKey: ["comments"],
+    queryKey: ["comments", postId],
     queryFn: () =>
       fetch(`${baseUrl}/posts/${postId}/comments`).then((res) => res.json()),
   });

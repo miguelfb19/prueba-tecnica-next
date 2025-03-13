@@ -36,7 +36,17 @@ Para dar u mayor orden y legibilidad de la estructuración del proyecto. Las car
 relacionado directamente con el nombre de la carpeta. La carpeta lib contiene informacion de shadcn, store contiene el store de zustand y 
 providers contiene el proveedor de tanstack query, si se necesitaran más proveedores de librerías irian allí.
 
-8. 
+8. En el caso de uso de tanStack query o server actions lo maneje de la siguiente manera:
+
+Use solo tanStack para le obtención de los comentarios, en este caso no es muy necesario pero en un caso real, son datos que pueden cambiar dinamicamente
+ademas de la interaccion del usuario al agregar nuevos datos, tanStack me permite actualizar esos datos de manera dinamica en el cliente.
+
+Para las demás cosas use server actions para obtener los diferentes recursos, pienso que es mucho mas optimo para nos cargar tanto JS en el cliente
+si no es estrictamente necesario, y en el caso de poderse, user next/dynamic para no tener que cargar todos los recursos si no son necesarios en el momento. A mi parecer, los datos cargados desde server actions van más rápido, lo podemos ver en la parte de los comentarios que tienen un pequeño
+delay para mostrarse, pero en el caso delas demás componentes se muestran inmediatamente.
+
+9. Use next/dynamic para un lazy loading en el caso de post detail, ya que es un componente que no es necesario en este caso cargar desde el principio
+y esto nos puede ahorrar en resdimiento de nuestra web.
 
 
 
