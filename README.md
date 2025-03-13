@@ -48,15 +48,19 @@ y esto nos puede ahorrar en resdimiento de nuestra web.
 # CUESTIONARIO TEÓRICO
 
 1. (1) Next.js 14 introduce nuevos Server Actions que permiten ejecutar lógica del lado del servidor sin necesidad de un endpoint API adicional. 
-TRUE
+**TRUE**
+
 2. (2) En React 18, la función useEffect se ejecuta antes de renderizar el componente en la pantalla.
-FALSE
+**FALSE**
+
 3. (3) El tipado en TypeScript elimina por completo los errores en tiempo de ejecución al compilar el proyecto.
-FALSE
+**FALSE**
+
 4. (4) TanStack Query permite manejar la caché de datos y revalidación de manera automática, optimizando solicitudes HTTP.
-TRUE
+**TRUE**
+
 5. (5) ShadCN está enfocado únicamente en la creación de dashboards empresariales sin posibilidad de uso general.
-FALSE
+**FALSE**
 
 
 6. (6) Respecto a las Server Components de Next.js 14, ¿cuál es su principal ventaja? 
